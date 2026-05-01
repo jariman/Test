@@ -11,6 +11,6 @@ names.push["Sofia"] //Anadir Sofia a la array
 
 names.pop //Quitar ultimo nombre
 
-names[1] = "Carlos"
+names[1] = "Carlos" //Cambiar Lucia por Carlos
 
 console.log(names)
