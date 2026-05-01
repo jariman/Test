@@ -22,6 +22,13 @@ function Buzz (num){
     return false
     }
 }
+function FyB (num){
+    if(num % 15 === 0){
+    return true
+    }else{
+    return false
+    }
+}
 
 function FizzBuzz (array){
     for (let i = 0; i < array.length; i++){
@@ -30,11 +37,14 @@ function FizzBuzz (array){
         }
         if(Buzz(i)){
             console.log("Buzz " + i)
-    }
+        }
+        if(FyB(i)){
+            console.log("FizzBuzz " + i)
+        }
     }
 }
 
-const cien = setNumbers(100)
+const cien = setNumbers(300)
 
 
 console.log(FizzBuzz(cien))
