@@ -9,7 +9,7 @@ console.log(names.length) //Cuantos nombre hay
 
 names.push["Sofia"] //Anadir Sofia a la array
 
-names.pop //Quitar ultimo nombre
+names.pop() //Quitar ultimo nombre
 
 names[1] = "Carlos" //Cambiar Lucia por Carlos
 
