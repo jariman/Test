@@ -25,12 +25,6 @@ function Buzz (num){
     }
 }
 
-function FizzBuzz (num){
-    if(num % 15 === 0){
-    return true
-    }else
-    return false
-}
 
 function checkNum (array){
     for (let i = 0; i <= array.length; i++){
@@ -50,6 +44,6 @@ function checkNum (array){
         } 
     }
 }
-const value = setNumbers (30)
+const value = setNumbers (1000)
 
 console.log(checkNum(value))
