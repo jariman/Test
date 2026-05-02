@@ -1,0 +1,40 @@
+# Definimos el orden: Directorio, luego la línea de relleno, luego el resto
+format = """
+$directory\
+$git_branch\
+$git_status\
+$line_break\
+$character"""
+
+
+
+
+
+# No esperar demasiado por comandos lentos
+command_timeout = 500
+
+# Añade una línea en blanco entre comandos para que no se vea todo amontonado
+add_newline = true
+
+# Reemplaza el símbolo del prompt (el que cambia de color si falla un comando)
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+# Configuración del directorio actual
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+style = "bold cyan"
+
+# Información de Git (super útil)
+[git_branch]
+symbol = "🌱 "
+style = "bold purple"
+
+[git_status]
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+modified = "📝"
+stashed = "📦"
